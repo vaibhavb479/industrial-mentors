@@ -53,10 +53,7 @@
     <video-player free="true" single="true"></video-player>
   </div>
   {{ end }} 
-  {{ $author := .Site.GetPage (print "/contributors/" (anchorize
-  .Params.Author)) }} 
-  {{ $authorImg := (print "/contributors/img/" (anchorize
-  .Params.Author) ".webp") }}
+  {{ $author := .Site.GetPage (print "/contributors/" (anchorize .Params.Author)) }} {{ $authorImg := (print "/contributors/img/" (anchorize .Params.Author) ".webp") }}
   <div
     class="flex items-center no-underline justify-center"
     itemprop="author"
