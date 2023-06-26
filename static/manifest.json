@@ -1,0 +1,16 @@
+{
+  "name": "Industrial Mentors",
+  "short_name": "Industr Mentors",
+  "description": "Awesome Content for Developers",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#2a2e35",
+  "theme_color": "#454e56",
+  "icons": [
+    {
+      "src": "/img/im-symbol.png",
+      "sizes": "64x64",
+      "type": "image/png"
+    }
+  ]
+}
