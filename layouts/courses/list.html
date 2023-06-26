@@ -52,9 +52,9 @@
   <div class="max-w-3xl mx-auto">
     <video-player free="true" single="true"></video-player>
   </div>
-  {{ end }} {{ $author := .Site.GetPage (print "/contributors/" (anchorize
-  .Params.Author)) }} {{ $authorImg := (print "/contributors/img/" (anchorize
-  .Params.Author) ".webp") }}
+  {{ end }} 
+  {{ $author := .Site.GetPage (print "/contributors/" (anchorize.Params.Author)) }} 
+  {{ $authorImg := (print "/contributors/img/" (anchorize.Params.Author) ".webp") }}
   <div
     class="flex items-center no-underline justify-center"
     itemprop="author"
@@ -75,8 +75,7 @@
         >
       </span>
       <span class="text-sm text-gray4">
-        {{ (.Params.authorbio | default "That guy who coded Industrial Mentors")
-        }}
+        {{ (.Params.authorbio | default "That guy who coded Industrial Mentors")}}
       </span>
     </span>
   </div>
@@ -172,4 +171,6 @@
   </div> -->
   {{ end }}
 </main>
-{{ end }} {{ define "footer" }} {{ partial "footer" }} {{ end }}
+{{ end }} 
+{{ define "footer" }} {{ partial "footer" }} 
+{{ end }}
