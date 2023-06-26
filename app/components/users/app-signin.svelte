@@ -5,7 +5,7 @@
 
 <modal-dialog name="signin" esc="true">
   <h1>Login</h1>
-  <p>With magic email link:</p>
+  <p>With link:</p>
   <email-signin />
   <p>Or with account:</p>
   <google-signin />
